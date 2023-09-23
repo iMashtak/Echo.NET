@@ -4,6 +4,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echo", "Echo\Echo.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echo.Tests", "Echo.Tests\Echo.Tests.csproj", "{EAE09937-F782-4ED2-BD65-188AA498668E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{FF139B3F-BA1C-4C03-92F8-DF020A951047}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENCE = LICENCE
+		README.adoc = README.adoc
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +25,7 @@ Global
 		{EAE09937-F782-4ED2-BD65-188AA498668E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE09937-F782-4ED2-BD65-188AA498668E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE09937-F782-4ED2-BD65-188AA498668E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

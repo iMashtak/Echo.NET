@@ -79,7 +79,7 @@ public class Tests : IClassFixture<LightInjectContainerFixture>
     {
         var counter = 0;
         _bus.Subscribe(typeof(TestCommandA),
-            async e => { throw new Exception();},
+            async e => { throw new Exception(); },
             async (e, ex) => { await _bus.Publish(new TestFailureA((TestCommandA)e)); }
         );
         _bus.Subscribe(typeof(TestSuccessA),

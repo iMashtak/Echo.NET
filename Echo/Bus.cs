@@ -123,9 +123,9 @@ public class Bus
             {
                 var eventType = handleMethod.GetParameters()[0].ParameterType;
                 MethodInfo exHandleMethod;
-                if (exHandleMethodsDictionary.ContainsKey(eventType))
+                if (exHandleMethodsDictionary.TryGetValue(eventType, out var method))
                 {
-                    exHandleMethod = exHandleMethodsDictionary[eventType];
+                    exHandleMethod = method;
                 }
                 else
                 {
