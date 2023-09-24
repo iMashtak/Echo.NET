@@ -1,4 +1,4 @@
-﻿namespace Echo.Tests;
+﻿namespace Echo.UnitTests;
 
 public class TestEventA : Event
 {
