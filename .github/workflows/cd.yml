@@ -18,4 +18,4 @@ jobs:
       - name: Dotnet Pack
         run: dotnet pack --configuration Release Echo
       - name: Dotnet Nuget Push
-        run: dotnet nuget push Echo/bin/Release/*.nupkg
+        run: dotnet nuget push Echo/bin/Release/*.nupkg -s https://api.nuget.org/v3/index.json
