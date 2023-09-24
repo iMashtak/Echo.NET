@@ -5,9 +5,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{FF139B3F-BA1C-4C03-92F8-DF020A951047}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		LICENCE = LICENCE
-		README.adoc = README.adoc
 		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\cd.yml = .github\workflows\cd.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echo.UnitTests", "Echo.UnitTests\Echo.UnitTests.csproj", "{1EABE571-2506-4CE0-B90F-3BA6078521AB}"

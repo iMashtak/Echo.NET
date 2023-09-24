@@ -1,15 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
-    
+
     <PropertyGroup>
         <PackageId>Echo.NET</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.2.0</Version>
         <Authors>Ivan Mashtak</Authors>
+        <Description>Simple event-based framework for developing high concurrent applications with event-based domain model</Description>
+        <PackageProjectUrl>https://github.com/iMashtak/Echo.NET</PackageProjectUrl>
+        <PackageLicenseFile>LICENCE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
-    
+
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include="../LICENCE" Pack="true" PackagePath=""/>
+        <None Include="../README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
 </Project>

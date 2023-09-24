@@ -1,0 +1,21 @@
+name: cd
+run-name: Echo CD
+
+on: [workflow_dispatch]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+        env:
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_AUTH_TOKEN }}
+      - name: Dotnet Build  
+        run: dotnet build --configuration Release Echo
+      - name: Dotnet Pack
+        run: dotnet pack --configuration Release Echo
+      - name: Dotnet Nuget Push
+        run: dotnet nuget push Echo/bin/Release/*.nupkg
